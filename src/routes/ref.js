@@ -21,11 +21,23 @@ router.get('/disability-types', async (req, res) => {
 router.get('/job-titles', async (req, res) => {
   try {
     const [result] = await pool.query(
-      'SELECT id, title, category FROM job_titles ORDER BY category, title'
+      'SELECT id, title FROM job_titles ORDER BY title'
     );
     res.json({ job_titles: result });
   } catch (err) {
     res.status(500).json({ error: 'Gagal mengambil data job title' });
+  }
+});
+
+// ── GET /api/ref/skills ──────────────────────────────────────────────────────
+router.get('/skills', async (req, res) => {
+  try {
+    const [result] = await pool.query(
+      'SELECT id, name FROM skills ORDER BY name'
+    );
+    res.json({ skills: result });
+  } catch (err) {
+    res.status(500).json({ error: 'Gagal mengambil data skills' });
   }
 });
 

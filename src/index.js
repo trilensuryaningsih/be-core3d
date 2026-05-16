@@ -8,6 +8,7 @@ const perusahaanRoutes = require('./routes/perusahaan');
 const jobsRoutes = require('./routes/jobs');
 const matchRoutes = require('./routes/match');
 const refRoutes = require('./routes/ref');
+const umkRoutes = require('./routes/umk');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -36,6 +37,7 @@ app.use('/api/perusahaan', perusahaanRoutes);
 app.use('/api/jobs', jobsRoutes);
 app.use('/api/match', matchRoutes);
 app.use('/api/ref', refRoutes);
+app.use('/api/umk', umkRoutes);
 
 // 404 handler
 app.use((_req, res) => {

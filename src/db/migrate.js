@@ -180,6 +180,17 @@ const createTables = async () => {
       )
     `);
 
+    // 13. city_minimum_wages
+    await connection.query(`
+      CREATE TABLE IF NOT EXISTS city_minimum_wages (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        province VARCHAR(100) NOT NULL,
+        city VARCHAR(150) NOT NULL,
+        minimum_wage BIGINT DEFAULT 0,
+        UNIQUE KEY unique_city (province, city)
+      )
+    `);
+
     await connection.commit();
     console.log('✅ Semua tabel berhasil dibuat!');
   } catch (err) {
