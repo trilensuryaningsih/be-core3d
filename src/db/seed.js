@@ -54,51 +54,134 @@ const disabilityTypes = [
 
 // ── SEEDER: JOB TITLES (10 posisi) ──────────────────────────────────────────
 const jobTitles = [
-  { title: 'Horticultural Therapist Assistant' },
-  { title: 'Customer Support Agent' },
-  { title: 'Craft/Artisan Worker' },
-  { title: 'Administrative Clerk' },
-  { title: 'Art Therapist Assistant' },
-  { title: 'Archivist' },
-  { title: 'Programmer' },
-  { title: 'Library Assistant' },
-  { title: 'Data Entry Specialist' },
-  { title: 'QA Tester' },
-  { title: 'Accountant' },
-  { title: 'Animator' },
-  { title: 'Virtual Assistant' },
-  { title: 'Online Moderator' },
-  { title: 'Freelance Writer' },
-  { title: 'Retail Stock Assistant' },
-  { title: 'Garden Maintenance Worker' },
-  { title: 'Cleaning Service' },
-  { title: 'Food Packaging Worker' },
-  { title: 'Laundry Worker' },
-  { title: 'Digital Marketing Specialist' },
-  { title: 'Financial Analyst' },
-  { title: 'HR Specialist (Remote)' },
-  { title: 'E-commerce Manager' },
-  { title: 'Remote Project Manager' },
-  { title: 'Telesales Agent' },
-  { title: 'Translator' },
-  { title: 'Customer Support Specialist' },
-  { title: 'Online Tutor' },
-  { title: 'Voice-over Artist' },
-  { title: 'Researcher' },
-  { title: 'Social Media Manager' },
-  { title: 'Bookkeeper' },
-  { title: 'UI/UX Designer' },
-  { title: 'Data Analyst' },
-  { title: 'Illustrator' },
-  { title: 'Content Writer' },
-  { title: 'Video Editor' },
-  { title: 'Software Developer' },
-  { title: 'Graphic Designer' },
-  { title: 'Transcriptionist' },
-  { title: 'Data Entry Operator' },
-  { title: 'Podcast Producer' },
-  { title: 'Telemarketer' },
-  { title: 'Customer Service Representative' }
+  { title: 'Horticultural Therapist Assistant', averageSalary: 3500000 },
+  { title: 'Customer Support Agent', averageSalary: 4200000 },
+  { title: 'Craft/Artisan Worker', averageSalary: 3300000 },
+  { title: 'Administrative Clerk', averageSalary: 4000000 },
+  { title: 'Art Therapist Assistant', averageSalary: 3600000 },
+  { title: 'Archivist', averageSalary: 4200000 },
+  { title: 'Programmer', averageSalary: 7500000 },
+  { title: 'Library Assistant', averageSalary: 3400000 },
+  { title: 'Data Entry Specialist', averageSalary: 3800000 },
+  { title: 'QA Tester', averageSalary: 6000000 },
+  { title: 'Accountant', averageSalary: 5500000 },
+  { title: 'Animator', averageSalary: 5000000 },
+  { title: 'Virtual Assistant', averageSalary: 4500000 },
+  { title: 'Online Moderator', averageSalary: 3800000 },
+  { title: 'Freelance Writer', averageSalary: 4000000 },
+  { title: 'Retail Stock Assistant', averageSalary: 3500000 },
+  { title: 'Garden Maintenance Worker', averageSalary: 3200000 },
+  { title: 'Cleaning Service', averageSalary: 3000000 },
+  { title: 'Food Packaging Worker', averageSalary: 3100000 },
+  { title: 'Laundry Worker', averageSalary: 2900000 },
+  { title: 'Digital Marketing Specialist', averageSalary: 5500000 },
+  { title: 'Financial Analyst', averageSalary: 7000000 },
+  { title: 'HR Specialist (Remote)', averageSalary: 5800000 },
+  { title: 'E-commerce Manager', averageSalary: 8000000 },
+  { title: 'Remote Project Manager', averageSalary: 10000000 },
+  { title: 'Telesales Agent', averageSalary: 3800000 },
+  { title: 'Translator', averageSalary: 5000000 },
+  { title: 'Customer Support Specialist', averageSalary: 4500000 },
+  { title: 'Online Tutor', averageSalary: 3800000 },
+  { title: 'Voice-over Artist', averageSalary: 5500000 },
+  { title: 'Researcher', averageSalary: 6500000 },
+  { title: 'Social Media Manager', averageSalary: 5500000 },
+  { title: 'Bookkeeper', averageSalary: 4300000 },
+  { title: 'UI/UX Designer', averageSalary: 7000000 },
+  { title: 'Data Analyst', averageSalary: 7500000 },
+  { title: 'Illustrator', averageSalary: 4800000 },
+  { title: 'Content Writer', averageSalary: 4200000 },
+  { title: 'Video Editor', averageSalary: 4800000 },
+  { title: 'Software Developer', averageSalary: 8500000 },
+  { title: 'Graphic Designer', averageSalary: 4500000 },
+  { title: 'Transcriptionist', averageSalary: 3600000 },
+  { title: 'Data Entry Operator', averageSalary: 3700000 },
+  { title: 'Podcast Producer', averageSalary: 5200000 },
+  { title: 'Telemarketer', averageSalary: 3700000 },
+  { title: 'Customer Service Representative', averageSalary: 4200000 }
+];
+// ── SEEDER: SKILLS ─────────────────────────────────────────────────────────
+const skills = [
+  'HTML', 'CSS', 'JavaScript', 'React.js', 'Vue.js',
+  'Angular', 'Svelte', 'Tailwind CSS', 'Bootstrap', 'Node.js',
+  'Express.js', 'NestJS', 'PHP', 'Laravel', 'CodeIgniter',
+  'Python', 'Django', 'Flask', 'FastAPI', 'Java',
+  'Spring Boot', 'Kotlin', 'Swift', 'Flutter', 'React Native',
+  'Go (Golang)', 'Ruby', 'Ruby on Rails', 'C#', '.NET Core',
+  'TypeScript', 'GraphQL', 'RESTful API', 'SQL', 'MySQL',
+  'PostgreSQL', 'MongoDB', 'Redis', 'Firebase', 'SQLite',
+  'Oracle Database', 'Microsoft SQL Server', 'Git', 'GitHub', 'GitLab',
+  'Docker', 'Kubernetes', 'AWS', 'Google Cloud Platform (GCP)', 'Microsoft Azure',
+  'CI/CD', 'Jenkins', 'Linux', 'Bash Scripting', 'Nginx',
+  'Apache', 'UI Design', 'UX Design', 'Figma', 'Adobe XD',
+  'Sketch', 'Wireframing', 'Prototyping', 'User Research', 'Design Systems',
+  'Graphic Design', 'Adobe Photoshop', 'Adobe Illustrator', 'Adobe Premiere Pro', 'After Effects',
+  'Video Editing', 'Motion Graphics', '3D Modeling', 'Blender', 'CorelDraw',
+  'Data Analysis', 'Data Science', 'Machine Learning', 'Deep Learning', 'Python Pandas',
+  'NumPy', 'Scikit-Learn', 'TensorFlow', 'PyTorch', 'YOLOv8',
+  'FaceNet', 'Computer Vision', 'NLP (Natural Language Processing)', 'R Programming', 'Tableau',
+  'Power BI', 'Google Looker Studio', 'Data Warehousing', 'Hadoop', 'Apache Spark',
+  'ETL Processes', 'SEO (Search Engine Optimization)', 'SEM (Search Engine Marketing)', 'Google Analytics', 'Social Media Management',
+  'Content Writing', 'Copywriting', 'Technical Writing', 'Email Marketing', 'Digital Marketing Strategy',
+  'Project Management', 'Agile Methodology', 'Scrum', 'Jira', 'Trello',
+  'Product Management', 'Business Analysis', 'Product Roadmap', 'QA Testing', 'Manual Testing',
+  'Automation Testing', 'Selenium', 'Cypress', 'Postman API Testing', 'Cybersecurity',
+  'Penetration Testing', 'Network Security', 'Cryptography', 'Ethical Hacking', 'Cisco Networking',
+  'System Administration', 'IT Support', 'Hardware Troubleshooting', 'Cloud Architecture', 'DevOps',
+  'Data Entry', 'Microsoft Office', 'Microsoft Excel (Advanced)', 'Google Sheets', 'Accounting',
+  'Financial Auditing', 'Taxation (Perpajakan)', 'Bookkeeping', 'SAP', 'MYOB',
+  'Customer Service', 'Public Relations', 'Copyediting', 'Translation (English-Indonesian)', 'Interpersonal Communication'
+];
+
+// ── SEEDER: PROVINCES ──────────────────────────────────────────────────────
+const provinces = [
+  // Sumatra
+  { name: 'Aceh', minimumWage: 3932552 },
+  { name: 'Sumatera Utara', minimumWage: 3228949 },
+  { name: 'Sumatera Barat', minimumWage: 3182955 },
+  { name: 'Riau', minimumWage: 3780495 },
+  { name: 'Kepulauan Riau', minimumWage: 3879520 },
+  { name: 'Jambi', minimumWage: 3471497 },
+  { name: 'Bengkulu', minimumWage: 2827250 },
+  { name: 'Sumatera Selatan', minimumWage: 3942963 },
+  { name: 'Kepulauan Bangka Belitung', minimumWage: 4035000 },
+  { name: 'Lampung', minimumWage: 3047734 },
+
+  // Jawa & Bali
+  { name: 'DKI Jakarta', minimumWage: 5729876 },
+  { name: 'Banten', minimumWage: 3100881 },
+  { name: 'Jawa Barat', minimumWage: 2317601 },
+  { name: 'Jawa Tengah', minimumWage: 2327386 },
+  { name: 'DI Yogyakarta', minimumWage: 2417495 },
+  { name: 'Jawa Timur', minimumWage: 2446880 },
+  { name: 'Bali', minimumWage: 3207459 },
+
+  // Nusa Tenggara & Kalimantan
+  { name: 'Nusa Tenggara Barat', minimumWage: 2673861 },
+  { name: 'Nusa Tenggara Timur', minimumWage: 2455898 },
+  { name: 'Kalimantan Barat', minimumWage: 3054552 },
+  { name: 'Kalimantan Tengah', minimumWage: 3686138 },
+  { name: 'Kalimantan Selatan', minimumWage: 3725000 },
+  { name: 'Kalimantan Timur', minimumWage: 3762431 },
+  { name: 'Kalimantan Utara', minimumWage: 3775243 },
+
+  // Sulawesi
+  { name: 'Sulawesi Utara', minimumWage: 4002630 },
+  { name: 'Gorontalo', minimumWage: 3405144 },
+  { name: 'Sulawesi Tengah', minimumWage: 3179565 },
+  { name: 'Sulawesi Barat', minimumWage: 3315934 },
+  { name: 'Sulawesi Selatan', minimumWage: 3921088 },
+  { name: 'Sulawesi Tenggara', minimumWage: 3306496 },
+
+  // Maluku & Papua
+  { name: 'Maluku', minimumWage: 3334490 },
+  { name: 'Maluku Utara', minimumWage: 3510240 },
+  { name: 'Papua', minimumWage: 4436283 },
+  { name: 'Papua Barat', minimumWage: 3841000 },
+  { name: 'Papua Selatan', minimumWage: 4508100 },
+  { name: 'Papua Tengah', minimumWage: 4285848 },
+  { name: 'Papua Pegunungan', minimumWage: 4508714 },
+  { name: 'Papua Barat Daya', minimumWage: 3766000 }
 ];
 
 // ── SEEDER: USERS (kandidat & perusahaan) ─────────────────────────────────-
@@ -161,6 +244,32 @@ const runSeed = async () => {
       );
     }
     console.log(`  ✅ ${jobTitles.length} job title berhasil di-seed`);
+
+    // Seed skills
+    console.log('  → Seeding skills...');
+    for (const skill of skills) {
+      await connection.query(
+        `INSERT INTO skills (name)
+         VALUES (?)
+         ON DUPLICATE KEY UPDATE
+           name = VALUES(name)`,
+        [skill]
+      );
+    }
+    console.log(`  ✅ ${skills.length} skills berhasil di-seed`);
+
+    // Seed provinces
+    console.log('  → Seeding provinces...');
+    for (const province of provinces) {
+      await connection.query(
+        `INSERT INTO provinces (name, minimum_wage)
+         VALUES (?, ?)
+         ON DUPLICATE KEY UPDATE
+           minimum_wage = VALUES(minimum_wage)`,
+        [province.name, province.minimumWage]
+      );
+    }
+    console.log(`  ✅ ${provinces.length} provinces berhasil di-seed`);
 
     // Seed users
     console.log('  → Seeding users (kandidat & perusahaan)...');
